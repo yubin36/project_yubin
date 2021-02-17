@@ -1,0 +1,30 @@
+@charset "utf-8";
+/*about, process*/
+
+.menu-wrap{position: fixed; right: 30px; bottom: 50%; transform: translateY(50%);text-align: center; background-color: rgba(191, 191, 191, 0.44); border-radius: 10px 10px;}
+
+.dot-menu-wrap{display: inline-block; margin-top: 15px;}
+.dot-menu-wrap span{display: block; margin-bottom: 8px;}
+.dot-menu-wrap span:last-child{margin-bottom: 0;}
+.dot-menu-wrap span a{display: block; text-indent: -9999px; width: 8px; height: 8px; border: 1px solid #dedede; border-radius: 50%; background-color: #fff;}
+.dot-menu-wrap span.on a{background-color: #727272;}
+
+.btn-wrap{}
+.btn-wrap span{display: block;}
+.btn-wrap span a{display: block;}
+.btn-wrap span a img{width: 35px; height: 35px; padding: 7px 5px;}
+.btn-wrap span:last-child img{padding-top: 0;}
+
+.about_btn-wrap{position: fixed; right: 30px; bottom: 50%; transform: translateY(50%);text-align: center; background-color: rgba(191, 191, 191, 0.44); border-radius: 10px 10px;}
+.about_btn-wrap span{display: block;}
+.about_btn-wrap span a{display: block; }
+.about_btn-wrap span a img{width: 35px; height: 35px; padding: 5px 5px;}
+.about-wrap{max-width: 1600px; margin: 0 auto;}
+.about-wrap .box > img{width: 100%;}
+
+.box-wrap{max-width: 1600px; margin: 0 auto;}
+.box-wrap .box > img{width: 100%;}
+@media screen and (max-width:767px){
+    /*화면 크기가 작아질때 이미지 넣기*/
+    
+}
