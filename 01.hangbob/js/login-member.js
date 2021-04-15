@@ -1,4 +1,4 @@
-$(function(){
+$(document).ready(function(){
 
 	$('#loginForm').submit(function(){
 		if($('#userId').val()==""){
@@ -50,12 +50,14 @@ $(function(){
 	    }else if($('#userPw').val() != $('#userPwdConfirm').val()){
 			$('#pw1-msg').hide();
 			$('#pw2-msg').show();
+		}else if($('#userPw').val().length < 8){
+            $('#pw1-msg').hide();
+			$('#pw2-msg').show().html('※비밀번호는 8자 이상입니다.');
 		}else{
-			
 			$('#pw2-msg').text('').hide();
 		}
 	});
-
+    
 	$('#joinForm').submit(function(){
 		if( $('#userId').val()=="" ){
 			$('#id-msg').show();
@@ -63,19 +65,14 @@ $(function(){
 			$('#id-msg').text('').hide();
 		};
 
-		if( $('#userPw').val()=="" ){
+		/*if( $('#userPw').val()=="" ){
 			$('#pw1-msg').show();
 		}else if($('#userPw').val().length < 8){
-			$('#pw1-msg').show().html('※비밀번호는 8자 이상입니다.');
-		}else{
-			$('#pw1-msg').text('').hide();
-		};
-
-		if( $('#userPwdConfirm').val()=="" ){
-		   $('#pw2-msg').show().html('※확인버튼을 누르세요.');
+            $('#pw1-msg').hide();
+			$('#pw2-msg').show().html('※비밀번호는 8자 이상입니다.');
 		}else{
 			$('#pw2-msg').text('').hide();
-		}
+		};*/
 		
 		if( $('#phoneNumber').val()=="" ){
 		   $('#pnum-msg').show();

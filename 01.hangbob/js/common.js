@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    
 	$('.gnb > li').mouseenter(function(){	
 		$('#header').addClass('on');	
 		

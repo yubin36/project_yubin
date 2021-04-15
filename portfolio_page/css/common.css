@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+body{min-width: 700px; overflow: auto;}
+#skip-nav{background: #ccc; width: 100%; height: 20px; position: fixed; left: 0; top: -40px; text-align: center;}
+#skip-nav:focus{top: 0; border: 0;}
+
+.main-wrap{margin: 0 auto;}
+.section{position: relative;}
+.inner-wrap{margin: 0 auto; max-width: 1700px; height: 800px;}
+
+#header{position: fixed; z-index: 10000; margin: 2.5rem;}
+#header .menu-btn.open{border-radius: 50%; width: 45px; height: 45px;}
+#header .open img{width: 23px;}
+#header > img{width: 25px; position: absolute; left: .5rem; top: 5rem; z-index: 20;}
+#header #gnb-box{display: none; width: 300px; height: 100vh; background: #fff; position: absolute; left: -2.5rem; top: -2.5rem; z-index: 200; }
+#header .menu-btn.close{margin: 2rem; width: 40px; height: 40px;}
+#header .close img{width: 25px; position: absolute; right: 2rem; top: 2rem; z-index: 20;}
+
+#header nav .gnb > li + li{margin-top: .5rem;}
+#header nav .gnb li:hover{background: #ccc;}
+#header nav .gnb li a{display: block; padding: 1.2rem; font-size: 23px;}
+
+#header nav .gnb li .sub-menu{display: none; background: #fff; padding-left: 1.5rem;}
+#header nav .gnb li .sub-menu > li:hover{background: 0; font-weight: 700;}
+#header nav .gnb li .sub-menu li a{display: block; padding: 1.1rem; font-size: 1rem;}
+
+#section1 .inner-wrap{margin: 0 auto; max-width: 100%; height: 700px; background: rgba(252, 252, 252, 0.68);}
+#section1{background-image: url(../images/sunflowers-6007847_1920.jpg); background-size: cover;}
+#section1 .txt-box{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+#section1 h1{text-align: center; width: auto; font-size: 4.5rem; font-weight: 900;}
+#section1 p{text-align: center; font-size: 2rem; margin: 3rem 0 2rem; color: #2e2e2e;}
+#section1 span{display: block; text-align: center; font-size: 1.5rem; font-weight: 400;}
+
+
+
+#section3 .inner-wrap{overflow: hidden; margin-right: 4rem;}
+#section3 .inner-wrap .proj-img{width: 900px; max-width: 900px; min-width: 750px; height: 100%; float: left; padding: 4rem 0 0 6rem; position: relative;}
+
+#section3 #hangbob .proj-img{background: rgb(255, 241, 132);}
+#section3 #milk-del .proj-img{background: rgb(162, 234, 255);}
+#section3 #yangyoo .proj-img{background: rgba(255, 83, 83, 0.87);}
+#section3 #tongdo .proj-img{background: rgba(17, 113, 183, 0.87);}
+
+
+#section3 .proj-img .proj-name{position: relative; font-weight: 700; letter-spacing: .03rem; color: #191919;}
+#section3 .proj-img .proj-name:after{content: ""; display: block; width: 40px; height: 1px; background-color: #191919; position: absolute; right: -85%; top: 60%;}
+#section3 .proj-img .proj-num{font-weight: 500; padding: 3.5rem 0 0;}
+#section3 .proj-img h2{font-size: 2.5rem; line-height: 1.4; font-weight: 700; color: #191919; padding: 1rem;}
+
+#section3 .proj-img img{width: auto; min-width: 400px; max-width: 800px; position: absolute; left: 6rem; bottom: 10rem;}
+#milk-del .proj-img img{width: 98%; max-width: 1000px; left: 3rem; bottom: 3rem;}
+#tongdo .proj-img img{width: 95%; max-width: 870px; bottom: 8rem;}
+#yangyoo .proj-img img{width: auto; max-width: 600px; left: 12rem; bottom: 13rem;}
+
+#section3 .proj-img .notice{position: absolute; left: 2rem; bottom: 6rem; font-size: .8rem;}
+
+#section3 .inner-wrap .proj-txt{float: left; height: 75%; padding: 8rem 4.5rem; margin-left: 1rem;}
+#section3 .proj-txt h3{font-size: 2.5rem; line-height: 1.5; font-weight: 700; color: #191919; margin-top: 5.5rem;}
+#section3 .proj-txt p{font-size: 1.2rem; padding-top: 1.2rem; font-weight: 500;}
+#section3 .proj-txt .explain{line-height: 2; padding: 50px 0; font-size: 1.2rem;}
+#section3 .proj-txt button{padding: 15px; border-radius: 7px; margin: 13px 10px 0 0; font-size: 1rem; font-weight: 700; border: 1px solid #969696;}
+#section3 .proj-txt button:hover{border: 1px solid #000;}
+
+@media screen and (max-width:1644px){
+    
+    #section3 .inner-wrap{margin-right: 0rem; background: #ccc; position: relative;}
+    #section3 .inner-wrap .proj-img{min-width: 100%;}
+    #section3 .proj-img img{width: 44%; min-width: none; max-width:none; left: 8rem; top: 18rem;}
+    #milk-del .proj-img img{width: 52%; left: 3rem; top: 17rem;}
+    #yangyoo .proj-img img{width: 37%; left: 9rem; top: 18rem;}
+    #tongdo .proj-img img{width: 57%; left: 1rem; top: 17rem;}
+    
+    #section3 .inner-wrap .proj-txt{position: absolute; right: 5rem; top: 4rem;}
+    #section3 .proj-txt h3{font-size: 2rem;}
+ 
+}
+
+@media screen and (max-width:1280px){
+    
+    #section3 .inner-wrap{margin-right: 0rem; background: #ccc; position: relative;}
+    #section3 .inner-wrap .proj-img{min-width: 100%;}
+    #section3 .proj-img img{width: 47%; min-width: none; max-width:none; left: 8rem; top: 17.5rem;}
+    #milk-del .proj-img img{width: 57%; left: 6rem; top: 16rem;}
+    #yangyoo .proj-img img{width: 37%; left: 9rem; top: 16rem;}
+    #tongdo .proj-img img{width: 53%; left: 6rem; top: 16rem;}
+    
+    #section3 .proj-img .notice{position: absolute; left: 1rem; bottom: 4.8rem; font-size: .75rem;}
+    
+    #section3 .inner-wrap .proj-txt{right: 0rem; left: 8rem; top: inherit; bottom: 1rem; float: inherit; height: 30%; padding: 0;}
+
+    #section3 .proj-txt h3{display: none;}
+    #section3 .proj-txt p{padding-top: 0rem;}
+    #section3 .proj-txt .explain{padding: 10px 0;}
+    
+}

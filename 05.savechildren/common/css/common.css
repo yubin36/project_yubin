@@ -124,8 +124,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 #footer .container .bottom .addrCopy{padding-bottom: 30px; border-top: 1px solid #d9d9d9;}
 #footer .container .bottom .addrCopy address{line-height: 1.5em; font-size: 15px; padding-top: 30px;}
 #footer .container .bottom .addrCopy p{font-size: 13px; padding-top: 20px; color: #777;}
-#footer .topBtn{position: fixed; right: 40px; bottom: 82px; opacity: 0; transition: opacity .3s}
+#footer .topBtn{position: fixed; right: 60px; bottom: 82px; opacity: 0; transition: opacity .3s; z-index: 20000; width: 60px; height: 60px; border-radius: 50%; background-color: rgba(230, 230, 230, 0.78); box-sizing: border-box;}
+#footer .topBtn .fa-arrow-up{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);font-size: 40px;}
+#footer .topBtn:hover .fa-arrow-up{color: rgba(237, 27, 36, 0.83);}
 #footer .topBtn.on{opacity: 1;}
+
 
 /* Swiper 수정 */
 .swiper-slide .mobile{display: none;}
@@ -204,6 +207,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     #footer .container .bottom .addrCopy{padding-bottom: 20px; border-top: 1px solid #d9d9d9;}
     #footer .container .bottom .addrCopy address{line-height: 1.5em; font-size: 13px; padding-top: 20px;}
     #footer .container .bottom .addrCopy p{font-size: 13px; padding-top: 10px; color: #777;}
+    #footer .topBtn{right: 10px; width: 45px; height: 45px;}
+    #footer .topBtn .fa-arrow-up{font-size: 25px;}
     
     .swiper-slide .mobile{display: block;}
     .swiper-slide .pc{display: none;}

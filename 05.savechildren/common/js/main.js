@@ -52,10 +52,10 @@ $(document).ready(function(){
              ftTop = $('#footer').offset().top;
         console.log(winScrollT , winH, mainScrollT, mCon1Top ,  mCon2Top ,  mCon3Top , ftTop);
         
-        if(winScrollT >= mCon2Top) {
+        if(winScrollT >= mCon1Top) {
             $('.topBtn').addClass('on');
         }
-        else if(winScrollT <= mCon2Top){
+        else if(winScrollT <= mCon1Top){
             $('.topBtn').removeClass('on');
         }
 
